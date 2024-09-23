@@ -93,6 +93,9 @@ Want to improve the code or collaborate? Feel free to fork this repository, open
   <a href="https://www.linkedin.com/in/pushparaj1381-">
     <img src="https://img.shields.io/badge/LinkedIn-Hompushparaj%20Mehta-blue?style=flat-square&logo=linkedin">
   </a>
+  <a href="https://leetcode.com/u/Pushparaj1381/">
+  <img src= "https://img.shields.io/badge/LeetCode-Pushparaj1381-orange?style=flat-square&logo=leetcode">
+  </a>
   <a href="mailto:pushparajmehta002@gmail.com">
     <img src="https://img.shields.io/badge/Email-pushparajmehta002%40gmail.com-red?style=flat-square&logo=gmail">
   </a>
