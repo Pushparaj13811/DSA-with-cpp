@@ -27,6 +27,8 @@ This repository contains all the code I write while learning and practicing Data
 ```plaintext
 |-- pattern/
 |-- functions/ 
+|-- BinaryNumberSystem/
+|-- Bitwiseoperator/
 |-- arrays/
 |-- linked_lists/
 |-- stacks/
@@ -66,7 +68,7 @@ Each folder contains implementations of data structures and algorithms along wit
 
 - [x] patterns
 - [x] functions
-- [ ] Arrays
+- [x] Arrays
 - [ ] Linked Lists
 - [ ] Stacks and Queues
 - [ ] Sorting Algorithms
