@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/hompushparajmehta/c++/DSA",
-      "program": "/Users/hompushparajmehta/c++/DSA/build/Debug/outDebug"
+      "cwd": "/Users/hompushparajmehta/c++/DSA/binaryNumberSystem",
+      "program": "/Users/hompushparajmehta/c++/DSA/binaryNumberSystem/build/Debug/outDebug"
     }
   ]
 }
