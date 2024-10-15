@@ -57,12 +57,10 @@ vector<int> optimisedResult(vector<int> nums){
     for(int i = 1; i < len; i++){
         result[i] = result[i-1] * nums[i-1];
     }
-    cout << "Prefix : ";
-    print(result);
-    cout << endl;
-
+    int suffix = 1; 
     for(int i = len - 2; i >= 0; i--){
-        result[i + 1] = result[i + 1] * nums[i + 1];
+        suffix *= nums[i+1];
+        result[i] *= suffix;
     }
     return result;
 }
