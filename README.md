@@ -3,8 +3,9 @@
 This repository contains all the code I write while learning and practicing Data Structures and Algorithms (DSA) in C++. It includes various problems, solutions, and concepts that are essential for competitive programming and technical interviews.
 
 <p align="center">
-  <img src="./public/dsa.webp" alt="DSA Banner" width="600">
+  <img src="./public/dsa4.jpeg" alt="DSA Banner" width="600">
 </p>
+
 
 ## 📋 Content Overview
 
@@ -13,6 +14,10 @@ This repository contains all the code I write while learning and practicing Data
 - **💡 Problem Solving**: Solutions to key problems frequently encountered in coding challenges and interviews.
 
 ---
+
+<p align="center">
+  <img src="./public/dsa2.jpeg" alt="DSA Banner" width="600">
+</p>
 
 ## 🛠️ Tech Stack
 
@@ -46,6 +51,9 @@ This repository contains all the code I write while learning and practicing Data
 Each folder contains implementations of data structures and algorithms along with related problem solutions.
 
 ---
+<p align="center">
+  <img src="./public/dsa3.jpeg" alt="DSA Banner" width="600">
+</p>
 
 ## 🏁 Getting Started
 
@@ -114,7 +122,7 @@ This repository is licensed under the MIT License - see the [LICENSE](./LICENSE)
 ---
 
 <p align="center">
-  <img src="./public/dsa.webp" alt="Keep Coding" width="300">
+  <img src="./public/dsa1.webp" alt="Keep Coding" width="300">
 </p>
 
 ---
