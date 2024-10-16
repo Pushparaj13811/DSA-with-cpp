@@ -155,3 +155,119 @@ printf("%d", a);  // Output will be 20
 - **Pointers** allow pass by reference by passing the **address** and using `*` to modify values.
 - **References** provide a simpler syntax and are safer as they cannot be null or reassigned.
 - Both pointers and references enable **pass by reference** to modify the original variable inside functions.
+
+# Array Pointers and Constant Pointers
+
+### Array Pointers
+- An **array pointer** is a pointer that points to the first element of an array. 
+- It allows you to access array elements using pointer arithmetic.
+
+### Example of Array Pointer:
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int arr[] = {10, 20, 30};
+    int* ptr = arr; // Pointer to the first element of the array
+
+    // Accessing array elements using the pointer
+    for (int i = 0; i < 3; i++) {
+        cout << *(ptr + i) << " "; // Dereferencing pointer with offset
+    }
+    // Output: 10 20 30
+    return 0;
+}
+```
+
+Here:
+- `ptr` points to the first element of the array `arr`.
+- Using `*(ptr + i)` accesses the `i`-th element of the array.
+
+### Pointer to an Array
+- You can also declare a pointer that points to the entire array.
+
+### Example of Pointer to an Array:
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int arr[] = {10, 20, 30};
+    int (*ptr)[3] = &arr; // Pointer to the entire array
+
+    // Accessing elements
+    cout << (*ptr)[0] << " "; // Outputs 10
+    cout << (*ptr)[1] << " "; // Outputs 20
+    cout << (*ptr)[2] << " "; // Outputs 30
+
+    return 0;
+}
+```
+
+Here:
+- `ptr` is a pointer to the entire array `arr` of size 3.
+- You access the elements using `(*ptr)[index]`.
+
+### Constant Pointers
+- A **constant pointer** is a pointer that cannot change the address it points to after initialization, but the value at that address can be modified.
+- It is declared using the `const` keyword before the pointer variable.
+
+### Example of Constant Pointer:
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a = 10;
+    int b = 20;
+    int* const ptr = &a; // Constant pointer to 'a'
+
+    cout << *ptr << endl; // Output: 10
+
+    *ptr = 30; // Valid: Modifying the value at the address
+    cout << *ptr << endl; // Output: 30
+
+    // ptr = &b; // Invalid: Cannot change the address of a constant pointer
+
+    return 0;
+}
+```
+
+Here:
+- `ptr` is a constant pointer to `a` and can modify the value of `a`, but cannot point to `b`.
+
+### Constant Pointer to Constant Data
+- A **constant pointer to constant data** is a pointer that cannot change the address it points to, and the value at that address cannot be modified.
+
+### Example of Constant Pointer to Constant Data:
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    const int a = 10;
+    const int* const ptr = &a; // Constant pointer to constant data
+
+    // cout << *ptr << endl; // Output: 10
+
+    // *ptr = 20; // Invalid: Cannot modify the value at the address
+    // ptr = &b; // Invalid: Cannot change the address of a constant pointer
+
+    return 0;
+}
+```
+
+Here:
+- `ptr` is a constant pointer to a constant variable `a`. You cannot change the address or modify the value it points to.
+
+### Summary
+- **Array Pointer**: A pointer that points to the first element of an array, allowing access to array elements via pointer arithmetic.
+- **Pointer to Array**: A pointer that points to the entire array.
+- **Constant Pointer**: A pointer whose address cannot be changed after initialization but can modify the value at that address.
+- **Constant Pointer to Constant Data**: A pointer that cannot change its address or modify the value it points to.
+
