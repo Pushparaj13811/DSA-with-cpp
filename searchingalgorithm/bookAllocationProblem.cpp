@@ -54,13 +54,13 @@ bool isValid(vector<int> arr, int k, int maxAllowedPages)
 int findPages(vector<int> &arr, int k)
 {
 
-    if (arr.size() - 1 < k)
+    if (arr.size() < k)
     {
         return -1;
     }
 
     int st = 0, end = 0, ans = -1;
-    for (int i = 0; i < arr.size() - 1; i++)
+    for (int i = 0; i < arr.size(); i++)
     {
         end += arr[i];
     }
