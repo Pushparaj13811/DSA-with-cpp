@@ -65,6 +65,6 @@ int main()
 
     int result = minimumTime(arr, totalPainter);
     cout << "Minimum time required: " << result << endl;
-    
+
     return 0;
 }
